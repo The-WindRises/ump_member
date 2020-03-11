@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.my.MessageDetailActivity">
+
+    <include layout="@layout/common_top1"/>
+
+    <TextView
+        android:id="@+id/tv_msg_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_14"
+        android:layout_marginTop="@dimen/len_16"
+        android:paddingLeft="@dimen/len_28"
+        android:paddingRight="@dimen/len_20"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+      android:layout_marginTop="@dimen/len_16"
+        android:background="@color/lineColor1"/>
+
+    <TextView
+        android:id="@+id/tv_msg_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/len_12"
+        android:layout_marginTop="@dimen/len_16"
+        android:paddingLeft="@dimen/len_28"
+        android:textColor="@color/hintColor1"/>
+
+</LinearLayout>

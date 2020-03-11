@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/trans"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_update"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/len_128">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/label_find_new_version"
+                android:textColor="@color/textColor0"
+                android:textSize="@dimen/font_16" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/len_100"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/updlogTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor6"
+                android:textSize="@dimen/font_14" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/len_10"
+            android:layout_marginRight="@dimen/len_10">
+
+            <Button
+                android:id="@+id/upgradeNowBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/len_40"
+                android:layout_marginRight="@dimen/len_8"
+                android:layout_marginBottom="@dimen/len_10"
+                android:layout_weight="1"
+                android:background="@drawable/btn_withdrawal"
+                android:text="@string/label_upgrade_immediately"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/ignoreBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/len_40"
+                android:layout_marginRight="@dimen/len_8"
+                android:layout_marginBottom="@dimen/len_10"
+                android:layout_weight="1"
+                android:background="@drawable/btn_withdrawal"
+                android:text="@string/label_ignore"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

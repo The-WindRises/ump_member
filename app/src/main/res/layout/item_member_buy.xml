@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_package_buy_selected"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_60"
+        android:layout_margin="@dimen/len_16"
+        android:background="@drawable/bg_packge_select"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_member_buy_item"
+            android:layout_width="@dimen/len_24"
+            android:layout_height="@dimen/len_24"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/len_16"
+            android:src="@drawable/icon_packge_select" />
+
+        <TextView
+            android:id="@+id/iv_member_buy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/len_6"
+            android:textColor="@color/textColor1"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/tv_member_buy_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/len_4"
+            android:textColor="@color/textColor2"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/textColor11"
+            android:textSize="@dimen/font_14" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_member_buy_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/len_16"
+            android:textColor="@color/textColor2"
+            android:textSize="@dimen/font_18" />
+    </LinearLayout>
+
+
+</LinearLayout>

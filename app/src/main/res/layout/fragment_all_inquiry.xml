@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor2"
+    tools:context=".ui.fragment.inquiry.InquiryFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:paddingBottom="5dp"
+        android:background="@color/bgColor2"
+        >
+        <TextView
+            android:id="@+id/year_spinner_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="9dp"
+            android:textColor="@color/textColor1"
+            android:textSize="12sp"
+            android:background="@drawable/spinner_round_border"
+            android:drawableRight="@mipmap/ic_spinner_down"
+            android:text="@string/all_month_tag_str"/>
+        <TextView
+            android:id="@+id/month_spinner_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="9dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/textColor1"
+            android:textSize="12sp"
+            android:background="@drawable/spinner_round_border"
+            android:drawableRight="@mipmap/ic_spinner_down"
+            android:text="@string/all_month_tag_str"/>
+
+
+    </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/inquiry_list_sr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvc_inquiry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <it.swiftelink.com.common.widget.stateview.StateView
+        android:id="@+id/stateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trans"
+        android:visibility="gone" />
+
+</LinearLayout>

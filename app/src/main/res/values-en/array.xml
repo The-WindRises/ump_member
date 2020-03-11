@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_temperature">
+        <item>Underarm</item>
+        <item>Oral Cavity</item>
+        <item>Anus</item>
+    </string-array>
+
+    <string-array name="spinner_blood_glucose">
+        <item>Fasting</item>
+        <item>After Meal</item>
+        <item>Random</item>
+    </string-array>
+
+    <string-array name="spinner_phone">
+        <item>+852</item>
+        <item>+86</item>
+    </string-array>
+</resources>

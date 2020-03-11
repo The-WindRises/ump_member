@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_center_dialog"
+    android:paddingTop="@dimen/len_20">
+
+    <TextView
+        android:id="@+id/tv_marital_status1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/len_24"
+        android:paddingBottom="@dimen/len_12"
+        android:text="@string/label_be_married"
+        android:textColor="@color/textColor1"
+        android:textSize="@dimen/font_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineColor1" />
+
+    <TextView
+        android:id="@+id/tv_marital_status2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/len_12"
+        android:paddingBottom="@dimen/len_24"
+        android:text="@string/label_spinsterhood"
+        android:textColor="@color/textColor1"
+        android:textSize="@dimen/font_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineColor1" />
+
+
+</LinearLayout>

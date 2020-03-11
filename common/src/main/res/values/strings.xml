@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">common</string>
+
+    <string name="language_cn">中文</string>
+    <string name="language_en">ENGLISH</string>
+    <string name="language_auto">自动</string>
+    <string name="language_traditional">繁體</string>
+    <string name="concel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="data_loadding">数据加载中...</string>
+    <string name="click_retry">请点击重试~</string>
+    <string name="label_has_not_data">没有更多数据了</string>
+
+    <string name="system_download_component_disable">下载服务不可用,请您启用</string>
+    <string name="system_download_description">版本更新</string>
+</resources>

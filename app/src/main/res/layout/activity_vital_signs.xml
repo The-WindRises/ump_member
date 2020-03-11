@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor4"
+    android:orientation="vertical"
+    tools:context=".ui.activity.health.VitalSignsActivity">
+
+    <include layout="@layout/common_top1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/len_10"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/len_16"
+                    android:paddingRight="@dimen/len_20">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/len_16"
+                        android:paddingBottom="@dimen/len_14">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="@dimen/len_14"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/textColor5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/len_10"
+                            android:text="@string/label_weight_height"
+                            android:textColor="@color/textColor5"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bgColor4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_height"
+                            android:textColor="@color/textColor1"
+                            android:textSize="@dimen/font_14" />
+
+
+                        <EditText
+                            android:id="@+id/et_height"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:cursorVisible="true"
+                            android:gravity="right"
+                            android:hint="@string/label_input_height"
+                            android:inputType="text|number"
+                            android:paddingTop="@dimen/len_16"
+                            android:paddingBottom="@dimen/len_14"
+                            android:textColor="@color/textColor1"
+                            android:textCursorDrawable="@drawable/bg_et_cursor"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bgColor4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tips_weight1"
+                            android:textColor="@color/textColor1"
+                            android:textSize="@dimen/font_14" />
+
+
+                        <EditText
+                            android:id="@+id/et_weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:cursorVisible="true"
+                            android:gravity="right"
+                            android:hint="@string/tips_please_input_weight"
+                            android:inputType="text|numberDecimal"
+                            android:paddingTop="@dimen/len_16"
+                            android:paddingBottom="@dimen/len_14"
+                            android:textColor="@color/textColor1"
+                            android:textCursorDrawable="@drawable/bg_et_cursor"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/len_10"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/len_16"
+                    android:paddingRight="@dimen/len_20">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/len_16"
+                        android:paddingBottom="@dimen/len_14">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="@dimen/len_14"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/textColor5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/len_10"
+                            android:text="@string/label_animal_heat"
+                            android:textColor="@color/textColor5"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bgColor4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/label_test_part"
+                            android:textColor="@color/textColor1"
+                            android:textSize="@dimen/font_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right">
+
+                            <Spinner
+                                android:id="@+id/spinner_temperature"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:dropDownVerticalOffset="28dp"
+                                android:entries="@array/spinner_temperature" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:paddingLeft="@dimen/len_6"
+                                android:paddingTop="@dimen/len_16"
+                                android:paddingRight="@dimen/len_6"
+                                android:paddingBottom="@dimen/len_14"
+                                android:src="@mipmap/sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bgColor4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_animal_heat"
+                            android:textColor="@color/textColor1"
+                            android:textSize="@dimen/font_14" />
+
+                        <EditText
+                            android:id="@+id/et_animal_heat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:cursorVisible="true"
+                            android:gravity="right"
+                            android:hint="@string/tips_input_animal_heat"
+                            android:inputType="text|numberDecimal"
+                            android:paddingTop="@dimen/len_16"
+                            android:paddingBottom="@dimen/len_14"
+                            android:textColor="@color/textColor1"
+                            android:textCursorDrawable="@drawable/bg_et_cursor"
+                            android:textSize="@dimen/font_14" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/len_10"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/len_16"
+                    android:paddingRight="@dimen/len_20">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/len_16"
+                        android:paddingBottom="@dimen/len_14">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="@dimen/len_14"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/textColor5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/len_10"
+                            android:text="@string/label_blood_pressure"
+                            android:textColor="@color/textColor5"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bgColor4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_low_pressrue"
+                            android:textColor="@color/textColor1"
+                            android:textSize="@dimen/font_14" />
+
+
+                        <EditText
+                            android:id="@+id/et_low_tension"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:cursorVisible="true"
+                            android:gravity="right"
+                            android:hint="@string/tips_please_input_low_prssure"
+                            android:inputType="text|number"
+                            android:paddingTop="@dimen/len_16"
+                            android:paddingBottom="@dimen/len_14"
+                            android:textColor="@color/textColor1"
+                            android:textCursorDrawable="@drawable/bg_et_cursor"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bgColor4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_height_pressure"
+                            android:textColor="@color/textColor1"
+                            android:textSize="@dimen/font_14" />
+
+
+                        <EditText
+                            android:id="@+id/et_systolic_pressure"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:cursorVisible="true"
+                            android:gravity="right"
+                            android:hint="@string/tips_input_height_pressure"
+                            android:inputType="text|number"
+                            android:paddingTop="@dimen/len_16"
+                            android:paddingBottom="@dimen/len_14"
+                            android:textColor="@color/textColor1"
+                            android:textCursorDrawable="@drawable/bg_et_cursor"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/len_10"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/len_16"
+                    android:paddingRight="@dimen/len_20">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/len_16"
+                        android:paddingBottom="@dimen/len_14">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="@dimen/len_14"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/textColor5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/len_10"
+                            android:text="@string/label_pulse"
+                            android:textColor="@color/textColor5"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bgColor4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_pulse"
+                            android:textColor="@color/textColor1"
+                            android:textSize="@dimen/font_14" />
+
+
+                        <EditText
+                            android:id="@+id/et_pulse"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:cursorVisible="true"
+                            android:gravity="right"
+                            android:hint="@string/tips_input_pulse"
+                            android:inputType="text|number"
+                            android:paddingTop="@dimen/len_16"
+                            android:paddingBottom="@dimen/len_14"
+                            android:textColor="@color/textColor1"
+                            android:textCursorDrawable="@drawable/bg_et_cursor"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/len_10"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/len_16"
+                    android:paddingRight="@dimen/len_20">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/len_16"
+                        android:paddingBottom="@dimen/len_14">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="@dimen/len_14"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/textColor5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/len_10"
+                            android:text="@string/label_blood_glucose"
+                            android:textColor="@color/textColor5"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bgColor4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/len_16"
+                        android:paddingBottom="@dimen/len_14">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/label_blood_glucose_type"
+                            android:textColor="@color/textColor1"
+                            android:textSize="@dimen/font_14" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tips_lan">
+
+                            <Spinner
+                                android:id="@+id/spinner_blood_glucose"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:dropDownVerticalOffset="28dp"
+                                android:entries="@array/spinner_blood_glucose" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:paddingLeft="@dimen/len_6"
+                                android:paddingTop="@dimen/len_16"
+                                android:paddingRight="@dimen/len_6"
+                                android:paddingBottom="@dimen/len_14"
+                                android:src="@mipmap/sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bgColor4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_blood_glucose_level"
+                            android:textColor="@color/textColor1"
+                            android:textSize="@dimen/font_14" />
+
+
+                        <EditText
+                            android:id="@+id/et_blood_glucose_level"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:cursorVisible="true"
+                            android:gravity="right"
+                            android:hint="@string/please_input_blood_glucose_level"
+                            android:inputType="text|numberDecimal"
+                            android:paddingTop="@dimen/len_16"
+                            android:paddingBottom="@dimen/len_14"
+                            android:textColor="@color/textColor1"
+                            android:textCursorDrawable="@drawable/bg_et_cursor"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/len_10"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/len_16"
+                    android:paddingRight="@dimen/len_20">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/len_16"
+                        android:paddingBottom="@dimen/len_14">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="@dimen/len_14"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/textColor5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/len_10"
+                            android:text="@string/tips_head_circumference1"
+                            android:textColor="@color/textColor5"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bgColor4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tips_head_circumference1"
+                            android:textColor="@color/textColor1"
+                            android:textSize="@dimen/font_14" />
+
+                        <EditText
+                            android:id="@+id/et_head_circumference"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:cursorVisible="true"
+                            android:gravity="right"
+                            android:hint="@string/tips_input_circumference"
+                            android:inputType="text|number"
+                            android:paddingTop="@dimen/len_16"
+                            android:paddingBottom="@dimen/len_14"
+                            android:textColor="@color/textColor1"
+                            android:textCursorDrawable="@drawable/bg_et_cursor"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/len_10"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/len_16"
+                    android:paddingRight="@dimen/len_20">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/len_16"
+                        android:paddingBottom="@dimen/len_14">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="@dimen/len_14"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/textColor5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/len_10"
+                            android:text="@string/label_allergic_history"
+                            android:textColor="@color/textColor5"
+                            android:textSize="@dimen/font_14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bgColor4" />
+
+                    <EditText
+                        android:id="@+id/et_allergic_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/len_12"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:gravity="top"
+                        android:hint="@string/input_allergic_history"
+                        android:inputType="text|textMultiLine"
+                        android:maxLength="100"
+                        android:minHeight="@dimen/len_128"
+                        android:textColor="@color/textColor1"
+                        android:textCursorDrawable="@drawable/bg_et_cursor"
+                        android:textSize="@dimen/font_14" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/len_56"
+                    android:layout_marginLeft="@dimen/len_24"
+                    android:layout_marginTop="@dimen/len_60"
+                    android:layout_marginRight="@dimen/len_24"
+                    android:layout_marginBottom="@dimen/len_60"
+                    android:background="@drawable/btn_login"
+                    android:text="@string/label_keep_records"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_16" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <it.swiftelink.com.common.widget.stateview.StateView
+            android:id="@+id/stateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

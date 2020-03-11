@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="it.swiftelink.com.vcs_member">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.Camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 华为 -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- OPPO -->
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <!-- Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+
+    <!-- Apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+
+    <!-- Sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <!-- 联想ZUK -->
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <!-- HTC -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.3" />
+
+        <!-- bugly 配置APP ID -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="6adc9e79c4" />
+        <!-- bugly 配置APP版本号 -->
+        <meta-data
+            android:name="BUGLY_APP_VERSION"
+            android:value="1.2.0" />
+        <!-- 配置APP渠道号 -->
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="release" />
+
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="false" />
+
+        <activity
+            android:name=".ui.activity.account.SplashActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.GuideActivity" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name=".base.MyFileProvider"
+            android:authorities="${applicationId}.image_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public"
+                tools:replace="android:resource" />
+        </provider>
+
+        <activity
+            android:name=".ui.activity.account.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.account.BindPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.account.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.account.ForgetPsdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.PersonInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.MyAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.CompileAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.MyCouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.inquiry.MyInquiryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.order.PackageCardInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.recipe.RecipeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.inquiryReport.InquiryReportDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.order.OrderConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.order.PayResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.order.OrderListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.order.EvaluateCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.my.SelectCouponActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.my.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.health.HealthDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.health.VitalSignsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.health.EditImageDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.CollectDoctorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.DoctorDetailActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.health.ElectronicMedicalRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.order.LogisticsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.inquiryReport.InquiryReportListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.recipe.MyRecipeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.appointment.ForeseeInquiryDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.appointment.ClinicAppointmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.appointment.MemberBuyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.appointment.PackageBuyConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.videoChat.VideoChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.videoChat.MessageChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videoChat.ui.TRTCMainActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.inquiry.EditInquiryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.activity.my.MessageDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.health.HealthHistoryListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.health.HealthReportListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.health.EditCheckoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.health.EditHealthExaminationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.health.HistoryHealthDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.account.ChangeLoginPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.MyPackageCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.my.HelpContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".ui.activity.account.SetPayPsdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.account.InputPayPasswordActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/MyTranspaent"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.activity.my.ShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.health.HealthReportDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.user.AgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.appointment.MemberBuyAgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".weight.largeImage.PicViewActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.my.SelectPackageCardActivity"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name="it.swiftelink.com.common.update.ApkInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".mqtt.MqttService" />
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+
+        <receiver android:name=".mqtt.MyJPushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <category android:name="it.swiftelink.com.vcs_member"></category>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".mqtt.PushService"
+            android:process=":pushcore"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+
+
+
+    </application>
+
+</manifest>

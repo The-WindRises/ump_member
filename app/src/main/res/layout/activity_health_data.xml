@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.health.HealthDataActivity">
+
+    <include layout="@layout/common_top1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_health1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/btn_color1"
+                android:src="@mipmap/icon_health_top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="@dimen/len_12"
+                android:layout_marginTop="@dimen/len_8"
+                android:layout_marginRight="@dimen/len_12"
+                android:background="@mipmap/icon_bg_health"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/len_64"
+                    android:layout_height="@dimen/len_56"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/len_36"
+                    android:src="@mipmap/icon_health1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/len_36"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_vital_signs1"
+                        android:textColor="@color/textColor1"
+                        android:textSize="@dimen/font_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/len_6"
+                        android:text="@string/label_vital_signs2"
+                        android:textColor="@color/textColor9"
+                        android:textSize="@dimen/font_14" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/len_24"
+                    android:src="@mipmap/icon_enter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_health2"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="@dimen/len_12"
+                android:layout_marginTop="@dimen/len_8"
+                android:layout_marginRight="@dimen/len_12"
+                android:background="@mipmap/icon_bg_health"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/len_52"
+                    android:layout_height="@dimen/len_68"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/len_36"
+                    android:src="@mipmap/icon_health2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/len_44"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_examination_report"
+                        android:textColor="@color/textColor1"
+                        android:textSize="@dimen/font_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/len_6"
+                        android:text="@string/label_examination_report1"
+                        android:textColor="@color/textColor9"
+                        android:textSize="@dimen/font_14" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/len_24"
+                    android:src="@mipmap/icon_enter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_health3"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="@dimen/len_12"
+                android:layout_marginTop="@dimen/len_8"
+                android:layout_marginRight="@dimen/len_12"
+                android:background="@mipmap/icon_bg_health"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/len_52"
+                    android:layout_height="@dimen/len_68"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/len_36"
+                    android:src="@mipmap/icon_health3" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/len_44"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_survey_report"
+                        android:textColor="@color/textColor1"
+                        android:textSize="@dimen/font_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/len_6"
+                        android:text="@string/label_survey_report1"
+                        android:textColor="@color/textColor9"
+                        android:textSize="@dimen/font_14" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/len_24"
+                    android:src="@mipmap/icon_enter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_health4"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="@dimen/len_12"
+                android:layout_marginTop="@dimen/len_8"
+                android:layout_marginRight="@dimen/len_12"
+                android:background="@mipmap/icon_bg_health"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/len_52"
+                    android:layout_height="@dimen/len_68"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/len_36"
+                    android:src="@mipmap/icon_health4" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/len_44"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_image_data"
+                        android:textColor="@color/textColor1"
+                        android:textSize="@dimen/font_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/len_6"
+                        android:text="@string/label_image_data1"
+                        android:textColor="@color/textColor9"
+                        android:textSize="@dimen/font_14" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/len_24"
+                    android:src="@mipmap/icon_enter" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

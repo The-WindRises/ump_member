@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_top4" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            >
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:contentPadding="4dp">
+                <LinearLayout
+                    android:id="@+id/package_root_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:background="@mipmap/ic_package_detail_bg1"
+                    android:paddingBottom="25dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/package_card_detail_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="15dp"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                         >
+                        <TextView
+                            android:id="@+id/package_item_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="@color/textColor23"
+                            android:gravity="center_vertical"
+                            android:textSize="18sp"
+                            tools:text="体验卡"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"/>
+
+                            <TextView
+                                android:id="@+id/package_detail_date_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:paddingLeft="5dp"
+                                android:paddingEnd="5dp"
+                                android:paddingTop="3dp"
+                                android:paddingBottom="3dp"
+                                android:textColor="@color/textColor21"
+                                android:textSize="11sp"
+                                tools:text="60分钟"
+
+                                />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/package_item_tip_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="20dp"
+                            android:textColor="@color/textColor23"
+                            android:textSize="11sp" />
+
+                        <LinearLayout
+                            android:id="@+id/package_value_ll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/price_tag_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/money_tag_str"
+                                android:textColor="@color/textColor21"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/price_value_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/textColor21"
+                                android:textSize="29sp"
+                                tools:text="0.00" />
+
+
+                            <TextView
+                                android:id="@+id/original_price_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:singleLine="true"
+                                android:textColor="@color/textColor22"
+                                android:textSize="12sp"
+                                tools:text="￥20.00" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/package_date_tag_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:minWidth="9dp"
+                                android:minHeight="9dp"
+                                android:src="@mipmap/ic_package_date1" />
+
+
+                            <TextView
+                                android:id="@+id/package_date_value_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="5dp"
+                                android:textColor="@color/textColor21"
+                                android:textSize="9sp"
+                                tools:text="剩余时间2天12小时12分" />
+                        </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginEnd="4dp">
+                        <TextView
+                            android:id="@+id/package_type_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_package_detail_type2"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:gravity="right|center_vertical"
+                            android:paddingEnd="15dp"
+                            tools:text="体验卡" />
+                        </RelativeLayout>
+                </LinearLayout>
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_bottom_line"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                app:tabTextColor="@color/textColor1"
+                app:tabIndicatorColor="@color/btn_color1"
+                app:tabIndicatorHeight="@dimen/len_2"
+
+               >
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product_benefits_str" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tip_dec_title_str" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/common_problem_str" />
+            </com.google.android.material.tabs.TabLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- 第三部分:Your Scroll View-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/package_info_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="always"
+            android:background="@color/bgColor1"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <it.swiftelink.com.common.widget.stateview.StateView
+        android:id="@+id/stateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trans"
+        android:visibility="gone" />
+        <TextView
+            android:id="@+id/package_submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/btn_color1"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_center_dialog"
+    android:minWidth="260dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor20"
+        android:textSize="15sp"
+        android:text="@string/indicator_used_tip_str"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_bottom_line"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/tip_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/textColor7"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/confirm_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_btn_bg"
+        android:text="@string/know_use_str"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginTop="25dp"/>
+
+
+
+
+</LinearLayout>

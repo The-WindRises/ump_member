@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/package_item_root_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@mipmap/ic_package_bg1"
+        android:paddingBottom="15dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+         >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/package_type_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_package_type1"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/package_type_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:layout_marginEnd="5dp"
+                        tools:text="体验卡" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/package_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/package_item_date_bg1"
+                    android:textColor="@color/textColor21"
+                    android:minWidth="40dp"
+                    android:minHeight="12dp"
+                    android:textSize="11sp"
+                    tools:text="60分钟"
+                    android:gravity="center"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingEnd="5dp"
+
+                 />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/package_value_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:id="@+id/price_tag_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/money_tag_str"
+                    android:textColor="@color/textColor21"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/price_value_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor21"
+                    android:textSize="23sp"
+                    tools:text="0.00" />
+
+
+                <TextView
+                    android:id="@+id/original_price_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:textColor="@color/textColor22"
+                    android:textSize="11sp"
+                    android:singleLine="true"
+                    tools:text="￥20.00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/package_value_ll"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+              >
+
+
+                <ImageView
+                    android:id="@+id/package_date_tag_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_package_date1"
+                    android:layout_gravity="center"
+                    android:minHeight="9dp"
+                    android:minWidth="9dp"
+                />
+
+
+            <TextView
+                android:id="@+id/package_date_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/textColor21"
+                android:textSize="9sp"
+                tools:text="剩余时间2天12小时12分" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/package_item_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/textColor23"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="end"
+                android:singleLine="true"
+             />
+            <TextView
+                android:id="@+id/package_item_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor23"
+                android:textSize="10sp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="6dp"
+                />
+
+            <TextView
+                android:id="@+id/package_item_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_package_submit_bg1"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:minWidth="71dp"
+                android:minHeight="29dp"
+                tools:text="@string/experience_submit_str"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="21dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="hintColor1">#B3B3B3</color>
+
+    <color name="lineColor1">#E6E6E6</color>
+    <color name="lineColor2">#4D4D4D</color>
+
+
+    <color name="textColor0">#000000</color>
+    <color name="textColor1">#1A1A1A</color>
+    <color name="textColor2">#FC6D24</color>
+    <color name="textColor3">#999999</color>
+    <color name="textColor4">#FF0000</color>
+    <color name="textColor5">#3D93F5</color>
+    <color name="textColor6">#666666</color>
+    <color name="textColor7">#333333</color>
+    <color name="textColor8">#4D4D4D</color>
+    <color name="textColor9">#808080</color>
+    <color name="textColor10">#FF5E5E</color>
+    <color name="textColor11">#999999</color>
+    <color name="textColor12">#E9A709</color>
+    <color name="textColor13">#FF3333</color>
+    <color name="textColor14">#FC6719</color>
+    <color name="lineColor">#E7E7E7</color>
+    <color name="textColor15">#FC8141</color>
+    <color name="textColor16">#5BAD33</color>
+    <color name="textColor17">#4187D4</color>
+    <color name="textColor18">#CCCCCC</color>
+    <color name="textColor19">#999999</color>
+    <color name="textColor20">#000000</color>
+    <color name="textColor21">#F77B2B</color>
+    <color name="textColor22">#FF9B5B</color>
+    <color name="textColor23">#FBA152</color>
+    <color name="textColor24">#FA8442</color>
+    <color name="textColor25">#FE7055</color>
+    <color name="textColor26">#3D93F5</color>
+    <color name="textColor27">#FF917C</color>
+    <color name="textColor28">#74B0F5</color>
+    <color name="textColor29">#FD8B76</color>
+    <color name="textColor30">#4DA0FE</color>
+    <color name="textColor31">#9e9e9e</color>
+    <color name="textColor32">#B3B3B3</color>
+    <color name="textColor33">#9A8E5A</color>
+    <color name="textColor34">#CCCCCC</color>
+
+
+
+    <color name="bgColor1">#F5F5F5</color>
+    <color name="bgColor2">#E6E6E6</color>
+    <color name="bgColor3">#CCCCCC</color>
+    <color name="bgColor4">#FFF4F4F4</color>
+    <color name="bgColor5">#E7E7E7</color>
+    <color name="bgColor6">#EBEBEB</color>
+    <color name="bgColor7">#30000000</color>
+    <color name="bgColor11">#EEEEEE</color>
+    <color name="bgColor8">#FFFCCB</color>
+    <color name="bgColor9">#4482D5</color>
+    <color name="bgColor10">#CEE4FC</color>
+
+
+    <color name="btn_color1">#0694F8</color>
+    <color name="btn_color2">#ffffff</color>
+    <color name="btn_color3">#fcfcfc</color>
+    <color name="btn_color4">#FC6719</color>
+    <color name="btn_color5">#B9EF48</color>
+    <color name="btn_color6">#FFF4F9FE</color>
+
+    <color name="color_d8dbdf">#d8dbdf</color>
+    <color name="product_list_bac">#efeef4</color>
+    <color name="keyboard_blackground">#bababa</color>
+
+</resources>

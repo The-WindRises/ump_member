@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_temperature">
+        <item>腋下</item>
+        <item>口腔</item>
+        <item>肛门</item>
+    </string-array>
+
+    <string-array name="spinner_blood_glucose">
+        <item>空腹</item>
+        <item>餐后</item>
+        <item>随机</item>
+    </string-array>
+
+    <string-array name="spinner_phone">
+        <item>+852</item>
+        <item>+86</item>
+    </string-array>
+
+    <declare-styleable name="PayPsdInputView">
+
+        <attr name="maxCount" format="integer" />
+        <attr name="circleColor" format="color" />
+        <attr name="bottomLineColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="divideLineWidth" format="dimension" />
+        <attr name="divideLineColor" format="color" />
+        <attr name="rectAngle" format="dimension" />
+        <attr name="focusedColor" format="color"/>
+        <attr name="psdType" format="enum">
+            <enum name="weChat" value="0" />
+            <enum name="bottomLine" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

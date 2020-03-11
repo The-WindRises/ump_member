@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="11dp"
+    android:background="@drawable/spinner_round_border"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="14dp"
+        android:background="@drawable/bg_bottom_line"
+        >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/len_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/label_order_num"
+                    android:textColor="@color/textColor7"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor7"
+                    android:layout_marginStart="6dp"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/tv_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColor2"
+            android:layout_marginEnd="9dp"
+            android:textSize="@dimen/font_14"
+            tools:text="待处理"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_bottom_line"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tips_member"
+            android:textColor="@color/textColor6"
+            android:textSize="@dimen/font_12"
+            android:minWidth="60dp"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/textColor7"
+            android:textSize="@dimen/font_12"
+            tools:text="李莉"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_doctor_name"
+            android:minWidth="60dp"
+            android:textColor="@color/textColor6"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/tv_doctor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/btn_color4"
+            android:textSize="@dimen/font_12"
+            tools:text="李伟"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+     >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_symptom_descriptions"
+            android:textColor="@color/textColor6"
+            android:minWidth="60dp"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/tv_symptoms_described"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor7"
+            android:textSize="@dimen/font_12"
+            android:layout_marginStart="8dp"
+            tools:text="感冒"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_preliminary_judgment"
+            android:textColor="@color/textColor6"
+            android:minWidth="60dp"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/tv_preliminary_judgment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor7"
+            android:textSize="@dimen/font_12"
+            android:layout_marginStart="8dp"
+            tools:text="感冒" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_recipe_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="8dp"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/tv_order_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:layout_centerVertical="true"
+            tools:text="2019-12-12 08:00:09"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentEnd="true"
+         >
+        <TextView
+            android:id="@+id/tv_look_inquiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab_to_video"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingStart="16dp"
+            android:paddingBottom="8dp"
+            android:minHeight="28dp"
+            android:background="@drawable/item_inquiry_btn_bg2"
+            android:layout_marginStart="14dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+
+           />
+
+        <TextView
+            android:id="@+id/tv_look_recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingStart="16dp"
+            android:paddingBottom="8dp"
+            android:minHeight="28dp"
+            android:layout_marginStart="14dp"
+            android:background="@drawable/item_inquiry_btn_bg"
+            android:text="@string/look_prescription"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/textColor6" />
+
+        <TextView
+            android:id="@+id/tv_look_inquiry_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingStart="16dp"
+            android:paddingBottom="8dp"
+            android:minHeight="28dp"
+            android:background="@drawable/item_inquiry_btn_bg2"
+            android:singleLine="true"
+            android:layout_marginStart="14dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="@string/label_review_the_interview_report"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

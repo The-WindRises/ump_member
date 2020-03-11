@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.activity.order.EvaluateCenterActivity">
+
+    <include layout="@layout/common_top2"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tb_my_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_40"
+        android:background="@color/bgColor1"
+        app:tabIndicatorColor="@color/textColor5"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:tabIndicatorHeight="@dimen/len_2"
+        app:tabSelectedTextColor="@color/textColor5"
+        app:tabTextColor="@color/textColor1" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_my_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/len_24"
+    android:layout_margin="@dimen/len_4"
+    android:textSize="@dimen/font_12"
+    android:textColor="@color/textColor5"
+    android:paddingLeft="@dimen/len_16"
+    android:paddingRight="@dimen/len_16"
+    android:paddingTop="@dimen/len_4"
+    android:paddingBottom="@dimen/len_4"
+    android:background="@drawable/btn_rect_round_border_blue"
+    android:gravity="center">
+
+</TextView>

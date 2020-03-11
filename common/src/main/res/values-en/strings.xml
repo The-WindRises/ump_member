@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">common</string>
+
+    <string name="language_cn">中文</string>
+    <string name="language_en">ENGLISH</string>
+    <string name="language_auto">自动</string>
+    <string name="language_traditional">繁體</string>
+    <string name="concel">cancel</string>
+    <string name="confirm">confirm</string>
+    <string name="data_loadding">data loading...</string>
+    <string name="click_retry">please click retry~</string>
+    <string name="label_has_not_data">No more data</string>
+
+    <string name="system_download_component_disable">下载服务不可用,请您启用</string>
+    <string name="system_download_description">版本更新</string>
+</resources>

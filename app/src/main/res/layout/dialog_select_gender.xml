@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/len_20"
+    android:paddingBottom="@dimen/len_20"
+    android:background="@drawable/bg_center_dialog"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_gender1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/len_12"
+        android:paddingBottom="@dimen/len_12"
+        android:text="@string/label_male"
+        android:textColor="@color/textColor1"
+        android:textSize="@dimen/font_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineColor1" />
+
+    <TextView
+        android:id="@+id/tv_gender2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/len_12"
+        android:paddingBottom="@dimen/len_12"
+        android:text="@string/label_female"
+        android:textColor="@color/textColor1"
+        android:textSize="@dimen/font_16" />
+
+</LinearLayout>

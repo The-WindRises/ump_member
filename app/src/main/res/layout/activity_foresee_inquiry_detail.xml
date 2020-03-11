@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.activity.appointment.ForeseeInquiryDetailActivity">
+
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/common_top3" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tb_foresee_inquiry"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_36"
+        android:layout_below="@id/top"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        android:visibility="gone"
+        app:tabIndicatorColor="@color/textColor5"
+        app:tabIndicatorHeight="@dimen/len_2"
+        app:tabTextColor="@color/textColor1">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_foresee_tab1" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_foresee_tab2" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_foresee_tab3" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvc_foresee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tb_foresee_inquiry"
+        android:layout_marginBottom="@dimen/len_44"/>
+
+    <TextView
+        android:id="@+id/tv_inquiry_now"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_44"
+        android:layout_alignParentBottom="true"
+        android:background="@color/btn_color1"
+        android:gravity="center"
+        android:text="@string/label_inquiry_now"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16" />
+
+    <it.swiftelink.com.common.widget.stateview.StateView
+        android:id="@+id/stateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/len_64"
+        android:layout_marginBottom="@dimen/len_44"
+        android:visibility="gone" />
+
+</RelativeLayout>

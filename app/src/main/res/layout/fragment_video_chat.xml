@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgColor7">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor7">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/cvv_remote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/cvv_local"
+            android:layout_width="160dp"
+            android:layout_height="200dp" />
+        </FrameLayout>
+
+        <com.dalong.marqueeview.MarqueeView
+            android:id="@+id/mMarqueeView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:direction="left"
+            app:isRepeat="false"
+            app:speed="500"
+            app:startPoint="end"
+            app:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:textcolor="#FC6719" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/minIV"
+        android:layout_width="@dimen/len_28"
+        android:layout_height="@dimen/len_28"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="@dimen/len_32"
+        android:clickable="true"
+        android:src="@mipmap/em_call_zoomin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/networkStateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="@dimen/font_16"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/timeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/len_8"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="@dimen/font_16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/len_40">
+
+            <ImageView
+                android:id="@+id/cameraIV"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/len_56"
+                android:clickable="true"
+                android:src="@mipmap/icon_camera" />
+
+            <ImageView
+                android:id="@+id/exitIV"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:src="@mipmap/em_call_hangup" />
+
+            <ImageView
+                android:id="@+id/audioIV"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/len_56"
+                android:clickable="true"
+                android:src="@mipmap/audio_close" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wait_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_center_dialog"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/font_16">
+
+        <net.qiujuer.genius.ui.widget.Loading
+            android:id="@+id/loading_wait"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="@dimen/len_32"
+            android:layout_height="@dimen/len_32"
+            android:layout_marginBottom="@dimen/len_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="等待对方进入..."
+            android:textSize="@dimen/font_18" />
+    </LinearLayout>
+
+</RelativeLayout>

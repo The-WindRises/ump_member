@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.user.MyAddressActivity">
+
+    <include layout="@layout/common_top2" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_address_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <it.swiftelink.com.common.widget.stateview.StateView
+            android:id="@+id/stateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/len_24"
+        android:layout_marginTop="@dimen/len_52"
+        android:layout_marginRight="@dimen/len_24"
+        android:layout_marginBottom="@dimen/len_52"
+        android:background="@drawable/btn_login"
+        android:text="@string/label_new_address"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16" />
+    >
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.shizhefei.view.largeimage.LargeImageView
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_256"
+        android:background="@mipmap/icon_image_defout" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tb_foresee_inquiry"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_36"
+        app:tabIndicatorColor="@color/textColor5"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:tabIndicatorHeight="@dimen/len_2"
+        app:tabTextColor="@color/textColor1">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_foresee_tab1"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_foresee_tab2"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_foresee_tab3"/>
+
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>
